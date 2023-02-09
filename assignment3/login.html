@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <Script>
+        function validate(){
+         var userName=document.getElementById('uname')
+         var password=document.getElementById('psw');
+         if(userName.value.trim() == ""){
+             alert("user name can not be blank");
+            return false;
+         }else if(password.value.trim() ==""){
+             alert("password can not be blank");
+            return false;
+         }else if(password.value.trim().length<5){
+             alert("password should contain atleast 5 charecters");
+            return false;
+         }else{
+             return true;
+         }
+        }
+    </Script>
+</head>
+<body>
+    <form action="message.html" onsubmit="return validate()">
+        Name: <input type="text" name="username" id ="uname"/>
+        <br/>
+        <br/>
+       Password: <input type="text" name="username" id ="psw"/>
+       <br/>
+       <br/>
+       <button>Submit</button>
+    </form>
+</body>
+</html>
