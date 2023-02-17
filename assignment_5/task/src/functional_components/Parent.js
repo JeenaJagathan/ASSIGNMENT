@@ -12,7 +12,7 @@ function Parent() {
         onbuttonclick={buttonClick}
       />
       <Message
-        question="Name the national bird of Bangladesh?"
+        question="Name the national animal of Bangladesh?"
         onbuttonclick={buttonClick}
       />
     </div>
