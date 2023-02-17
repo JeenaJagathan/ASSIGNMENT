@@ -1,13 +1,19 @@
 import React from "react";
 function reg() {
-  const onbuttonClick=()=>{
+  const onbuttonClick = () => {
     console.log("submitted");
-  }
+  };
   return (
     <>
       <div class="container">
         <h1> Registration form with varification</h1>
-        <img src={require("./images/icon.jpg")} width="60" height="60" id="icon" alt="Loading" />
+        <img
+          src={require("./images/icon.jpg")}
+          width="60"
+          height="60"
+          id="icon"
+          alt="Loading"
+        />
         <form name="registration" class="registartion-form">
           <table>
             <tr>
@@ -99,7 +105,12 @@ function reg() {
             </tr>
             <tr>
               <td colspan="2">
-                <input type="submit" class="submit" value="Register" onClick={onbuttonClick}/>
+                <input
+                  type="submit"
+                  class="submit"
+                  value="Register"
+                  onClick={onbuttonClick}
+                />
               </td>
             </tr>
           </table>
